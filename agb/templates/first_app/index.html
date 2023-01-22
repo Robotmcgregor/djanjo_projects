@@ -12,8 +12,10 @@
         <h2>Eucalyptus tetrodonta</h2>
         <p>Tree growing up to 25m with rough stringy grey over redish brown bark up to the small branches to the tree. Leaves are opposite to su-oposite with lancelolate to broadly lancolateand are dull blue-green.</p>
         {% comment %} html django template tag {% endcomment %}
-        <img src="{% static ' images\tetrodonta_leaf.jpg' %}" alt="Uh oh can't locate Eucalyptus tetrodonta tree image">
-        {{ insert_me }}
+        {% comment %} <img src="{% static ' \images\tetrodonta_leaf.jpg' %}" alt="Uh oh can't locate Eucalyptus tetrodonta tree image"> {% endcomment %}
+        {% comment %} {{ insert_me }} {% endcomment %}
+
+        <img src="{% static 'images/tetrodonta_tree.jpg' %}" alt="My image">
     </body>
 
 </html>
