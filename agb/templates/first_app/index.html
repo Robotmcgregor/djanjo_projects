@@ -4,7 +4,8 @@
     <head>
         <meta charset='utf-8'>
         <title>Species Classes Page</title>
-        <link rel ="stylesheet", href="{% static 'css/biomass_styleguide.css' %}" />
+        {% comment %} #<link rel ="stylesheet", href="{% static 'css/biomass_styleguide.css' %}" /> {% endcomment %}
+        <link rel= "stylesheet", href="{% static 'css/biomass_styleguide.css' %}"/>
 
     </head>
     <body>
@@ -18,7 +19,7 @@
 
         <h2>Access Table</h2>
         <h3>Here are your access records</h3>
-        <div class="djang_two">
+        <div class="django_two">
             {% if access_records %}
             <table>
                 <thread>
