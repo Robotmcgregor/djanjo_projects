@@ -15,6 +15,32 @@
         {% comment %} {{ insert_me }} {% endcomment %}
 
         <img src="{% static 'images/tetrodonta_tree.jpg' %}" alt="Uh oh can't locate Eucalyptus tetrodonta tree image">
+
+        <h2>Access Table</h2>
+        <h3>Here are your access records</h3>
+        <div class="djang_two">
+            {% if access_records %}
+            <table>
+                <thread>
+                    <th>Site Name</th>
+                    <th>Date Accessed</th>
+                </thread>
+
+                {% for acc in access_records %}
+                <tr>
+                    <td>{{acc.name}}</td>
+                    <td>{{acc.name}}</td>
+                </tr>
+                {% endfor%}
+
+            </table>
+            {% else %}
+                <p> No access record found</p>
+            {% endif %}
+
+        </div>
+
+
     </body>
 
 </html>
