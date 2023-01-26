@@ -1,6 +1,5 @@
-
 from django.urls import path
-from user_app import views
+from appTwo import views
 
 urlpatterns = [
     path(r'', views.users, name="users"),
